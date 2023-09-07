@@ -31,9 +31,7 @@ vim.keymap.set('n', '<leader>b', '<CMD><CR>', {desc="Buffer"})
 
 vim.keymap.set('n', '<leader>bp', '<CMD>b#<CR>', {desc="Previous"})
 vim.keymap.set('n', '<leader>bm', '<CMD>messages<CR>', {desc="Messages"})
-vim.keymap.set('n', '<leader>bb', '<CMD>Telescope buffers<CR>', {desc="Buffer list"})
-
---vim.keymap.set('n', '<leader>bX', '<CMD>bp<bar>sp<bar>bn<bar>bd<CR>', {desc="Kill buffer"})
+vim.keymap.set('n', '<leader>bb', '<CMD>Telescope buffers<CR>', {desc="List buffers"})
 vim.keymap.set('n', '<leader>bX', '<CMD>b#<bar>bd#<CR>', {desc="Kill buffer"})
 
 
@@ -44,6 +42,4 @@ vim.keymap.set('n', '<leader>bnb', '<CMD>sp| Ex<CR>', {desc="Bottom"})
 -- open a new terminal
 vim.keymap.set('n', '<leader>bt', '<CMD><CR>', {desc="Terminal"})
 vim.keymap.set('n', '<leader>btr', '<CMD>vsplit<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Right"})
-vim.keymap.set('n', '<leader>btb', '<CMD>split | set nu! | set rnu! | term<CR>', {desc="Bottom"})
-
---vim.keymap.drwxr-xr-x   6 jose  staff   192B  5 Sep 18:32 .
+vim.keymap.set('n', '<leader>btb', '<CMD>split<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Bottom"})
