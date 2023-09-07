@@ -1,15 +1,15 @@
 # My own nvim config
 
-**Use as is**
+**Use as is / at your own risk**
 
 ## Current system settings and installed tools
 
-    - MacOS
-    - Alacritty
-    - homebrew
-    - Nerd Fonts
-    - Nodejs
-    - Python / pip
+- MacOS
+- Alacritty
+- homebrew
+- Nerd Fonts
+- Nodejs
+- Python3 / pip
 
 
 ## To install
