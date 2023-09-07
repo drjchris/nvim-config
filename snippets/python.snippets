@@ -1,0 +1,73 @@
+snippet startPy
+  #!/usr/bin/env python
+  #
+  # $1
+  #
+  # # # # # # #
+
+
+  def main() -> int:
+
+    return 0
+
+
+  if __name__ == "__main__":
+    main()
+
+
+snippet readJSON
+  def readJSON(dir_path: str):
+    """
+    Reads a local JSON file
+    :param: dir_path as string
+    :returns: dictionary or list of dictionary
+    """
+    with open(dir_path, "r") as fr:
+      jsonData = json.loads(fr.read())
+    return jsonData
+
+snippet strJSON
+  def strJSON(json_data):
+    """
+    Turns JSON data to pretty string
+    :param: json_data JSON object
+    :returns: string
+    """
+    return json.dumps(json_data, indent=2, ensure_ascii=False)
+
+snippet writeJSON
+  def writeJSON(json_data, file_dir):
+    """
+    Writes a JSON file.
+    :param json_data: JSON object or list of JSON objects
+    :return: None
+    """
+    with open(file_dir, "w") as fw:
+      fw.write(strJSON(json_data))
+
+snippet mongoinit
+  from pymongo import MongoClient
+
+
+snippet flaskinit
+  #!/usr/bin/env python
+  #
+  # $1
+  # This will run in
+  # http://127.0.0.1:5000
+  #
+  # # # # # # #
+
+  from flask import Flask
+
+  app = Flask(__name__)
+
+
+  @app.route('/')
+  def hello():
+      return '<h1>Hello, World!</h1>'
+
+
+  if __name__ == "__main__":
+    app.run()
+
