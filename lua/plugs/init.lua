@@ -14,5 +14,3 @@ require("plugs.whichkey")
 require("plugs.todo")
 require("plugs.lualine")
 require("plugs.gitsigns")
-
---require("plugs.oil") -- navigation explorer thing
