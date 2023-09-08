@@ -25,6 +25,9 @@ vim.o.expandtab = true
 -- keep sign column consistent
 vim.o.signcolumn = "yes"
 
+-- highlight cursor line
+vim.o.cursorline = true
+
 -- highlight search off and incremental search
 vim.o.hlsearch = false
 vim.o.incsearch = true
