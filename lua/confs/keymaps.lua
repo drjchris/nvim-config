@@ -32,5 +32,6 @@ vim.keymap.set('n', '<leader>bnb', '<CMD>sp| Ex<CR>', {desc="Bottom"})
 
 -- open a new terminal
 vim.keymap.set('n', '<leader>bt', '<CMD><CR>', {desc="Terminal"})
+vim.keymap.set('n', '<leader>btn', '<CMD>set nu!<bar>set rnu!<bar>term<CR>', {desc="Open here"})
 vim.keymap.set('n', '<leader>btr', '<CMD>vsplit<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Right"})
 vim.keymap.set('n', '<leader>btb', '<CMD>split<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Bottom"})
