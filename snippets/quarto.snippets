@@ -27,7 +27,7 @@ snippet start_article
 	#>>>
 	---
 
-snippet start_presHTL
+snippet start_presHTML
   ---
   # <<< Meta Header
   title: "$1"
@@ -58,6 +58,23 @@ snippet start_presPDF
   footer: ""
   # >>>
   ---
+
+snippet init_pptx
+  ---
+  # <<< settings and meta
+  title: "$1"
+  subtitle: ""
+  author: "Dr Jose Christian"
+  institute: "University of Brighton, School of Business and Law"
+  format:
+    pptx:
+      reference-doc: loc_ref.pptx
+      slide-level: 2
+      toc: true
+      toc-depth: 2
+  # >>>
+  ---
+
 
 snippet addhtml
 	html:
