@@ -77,6 +77,45 @@ cmp.setup.filetype('c', {
   })
 })
 
+-- Set configuration for HTML
+cmp.setup.filetype('html', {
+  sources = cmp.config.sources({
+    { name = 'path' },
+    { name = 'nvim_lsp', max_item_count=5},
+    { name = 'snippy', keyword_lenght=4}
+
+  }, {
+    { name = 'buffer' },
+  })
+})
+
+-- Set configuration for js
+cmp.setup.filetype('js', {
+  sources = cmp.config.sources({
+    { name = 'path' },
+    { name = 'nvim_lsp', max_item_count=5},
+    { name = 'snippy', keyword_lenght=4}
+
+  }, {
+    { name = 'buffer' },
+  })
+})
+
+-- Set configuration for css
+cmp.setup.filetype('css', {
+  sources = cmp.config.sources({
+    { name = 'path' },
+    { name = 'nvim_lsp', max_item_count=5},
+    { name = 'snippy', keyword_lenght=4}
+
+  }, {
+    { name = 'buffer' },
+  })
+})
+
+
+
+
 
 
 

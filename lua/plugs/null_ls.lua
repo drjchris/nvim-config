@@ -11,13 +11,10 @@ local sources = {
     formatting.clang_format.with({
       filetypes = { "c", "cpp", "h"},
     }),
-  -- for HTML/XML
+    -- for HTML/XML, JS, and CSS
     formatting.prettierd.with({
-      filetypes = { "html", "xml", "svg"},
+      filetypes = { "html", "xml", "svg", "js", "css"},
     }),
-
-
-
 }
 
 null_ls.setup({
