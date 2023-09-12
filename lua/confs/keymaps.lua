@@ -35,3 +35,11 @@ vim.keymap.set('n', '<leader>bt', '<CMD><CR>', {desc="Terminal"})
 vim.keymap.set('n', '<leader>btn', '<CMD>set nu!<bar>set rnu!<bar>term<CR>', {desc="Open here"})
 vim.keymap.set('n', '<leader>btr', '<CMD>vsplit<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Right"})
 vim.keymap.set('n', '<leader>btb', '<CMD>split<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Bottom"})
+
+
+-- VIMWIKI
+
+vim.keymap.set('n', '<leader>vw', '<CMD><CR>', {desc="vimWiki"})
+vim.keymap.set('n', '<leader>vww', '<CMD>VimwikiIndex<CR>', {desc="Index"})
+vim.keymap.set('n', '<leader>vwd', '<CMD>VimwikiDiaryIndex<CR>', {desc="Diary Index"})
+vim.keymap.set('n', '<leader>vwn', '<CMD>VimwikiMakeDiaryNote<CR>', {desc="Diary Note"})

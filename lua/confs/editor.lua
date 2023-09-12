@@ -43,3 +43,4 @@ vim.o.termguicolors = true
 -- scroll at the bottom
 vim.o.scrolloff = 8
 
+vim.o.noncompatible = true

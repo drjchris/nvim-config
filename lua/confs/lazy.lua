@@ -116,14 +116,8 @@ local plugins = {
 
   {'lewis6991/gitsigns.nvim'},
 
-  --[[ better explorer
-  {
-    'stevearc/oil.nvim',
-    opts = {},
-    -- Optional dependencies
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-  },
- --]]
+  -- nvim wiki
+  {'vimwiki/vimwiki',lazy=false},
 
 }
 
