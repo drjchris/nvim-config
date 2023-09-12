@@ -119,6 +119,9 @@ local plugins = {
   -- nvim wiki
   {'vimwiki/vimwiki',lazy=false},
 
+  -- better terminal
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
+
 }
 
 require("lazy").setup(plugins, opts)
