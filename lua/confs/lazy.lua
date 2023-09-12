@@ -122,6 +122,12 @@ local plugins = {
   -- better terminal
   {'akinsho/toggleterm.nvim', version = "*", config = true},
 
+
+  {
+    "startup-nvim/startup.nvim",
+    dependencies = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+  },
+
 }
 
 require("lazy").setup(plugins, opts)

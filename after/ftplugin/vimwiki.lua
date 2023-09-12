@@ -7,7 +7,7 @@ vim.opt_local.spelllang = "en_gb"
 vim.o.textwidth = 77
 
 -- columnthing
-vim.o.colorcolumn = "78"
+-- vim.o.colorcolumn = "78"
 
 
 
