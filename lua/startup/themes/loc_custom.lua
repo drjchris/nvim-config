@@ -28,8 +28,8 @@ local settings = {
         title = "Basic Commands",
         margin = 5,
         content = {
-            { "󰷈 VimWiki", "VimwikiIndex", "<leader>vww" },
-            { "󰢧 VimDiary", "VimwikiDiaryIndex", "<leader>vww" },
+            { "󰷈 Vim Wiki", "VimwikiIndex", "<leader>vww" },
+            { "󰢧 Vim Diary", "VimwikiDiaryIndex", "<leader>vww" },
             { " Find File", "Telescope find_files", "<leader>ff" },
             { " Find Word", "Telescope live_grep", "<leader>fg" },
             { " Recent Files", "Telescope oldfiles", "<leader>of" },

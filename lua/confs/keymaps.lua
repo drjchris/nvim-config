@@ -43,3 +43,5 @@ vim.keymap.set('n', '<leader>vww', '<CMD>VimwikiIndex<CR>', {desc="Index"})
 vim.keymap.set('n', '<leader>vwd', '<CMD>VimwikiDiaryIndex<CR>', {desc="Diary Index"})
 vim.keymap.set('n', '<leader>vwn', '<CMD>VimwikiMakeDiaryNote<CR>', {desc="Diary Note"})
 
+
+vim.keymap.set({'n'}, '<leader>§', '<CMD>Startup display<CR>', {desc="Go to Start page"})
