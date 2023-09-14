@@ -32,6 +32,9 @@ vim.keymap.set('n', '<leader>bnb', '<CMD>sp<CR>', {desc="Bottom"})
 
 -- open a new terminal
 
+
+vim.keymap.set('n', '<leader>Tf', '<CMD>ToggleTerm direction=float<CR>', {desc="Term Float"})
+
 --[[
 vim.keymap.set('n', '<leader>bt', '<CMD><CR>', {desc="Terminal"})
 vim.keymap.set('n', '<leader>btn', '<CMD>set nu!<bar>set rnu!<bar>term<CR>', {desc="Open here"})
@@ -45,6 +48,7 @@ vim.keymap.set('n', '<leader>vw', '<CMD><CR>', {desc="vimWiki"})
 vim.keymap.set('n', '<leader>vww', '<CMD>VimwikiIndex<CR>', {desc="Index"})
 vim.keymap.set('n', '<leader>vwd', '<CMD>VimwikiDiaryIndex<CR>', {desc="Diary Index"})
 vim.keymap.set('n', '<leader>vwn', '<CMD>VimwikiMakeDiaryNote<CR>', {desc="Diary Note"})
+vim.keymap.set('n', '<leader>vwt', '<CMD>VimwikiMakeTomorrowDiaryNote<CR>', {desc="Tomorrow Note"})
 
 
 vim.keymap.set({'n'}, '<leader>§', '<CMD>Startup display<CR>', {desc="Go to Start page"})
