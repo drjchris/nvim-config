@@ -61,7 +61,6 @@ local plugins = {
   -- auto format
   'jose-elias-alvarez/null-ls.nvim',
 
-
   -- MD table format
   {
   'dhruvasagar/vim-table-mode',
@@ -105,7 +104,7 @@ local plugins = {
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
-      vim.o.timeoutlen = 300
+      vim.o.timeoutlen = 30
     end,
     opts = {
       -- your configuration comes here
@@ -114,6 +113,7 @@ local plugins = {
     }
   },
 
+  -- for changes made to files
   {'lewis6991/gitsigns.nvim'},
 
   -- nvim wiki
@@ -122,7 +122,7 @@ local plugins = {
   -- better terminal
   {'akinsho/toggleterm.nvim', version = "*", config = true},
 
-
+  -- startup page
   {
     "startup-nvim/startup.nvim",
     dependencies = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
