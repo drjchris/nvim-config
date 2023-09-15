@@ -1,6 +1,6 @@
 
 if vim.g.vscode then
-    -- VSCode extension
+    -- VSCode extension this
 else
     -- ordinary Neovim
   require("confs")

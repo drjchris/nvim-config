@@ -7,6 +7,7 @@ vim.keymap.set('n', '<leader>f', '<CMD><CR>', {desc="File"})
 vim.keymap.set("n", "<leader>fe", "<CMD>Ex<CR>", { desc="File Explorer"})
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, {desc = "File Finder"})
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, {desc = "File Grep"})
+vim.keymap.set("n", "<leader>fr", require("telescope.builtin").oldfiles, {desc = "File Recent"})
 
 -- Navigate between TMUX splits
 -- Other stuff needs to be installed, for it to work

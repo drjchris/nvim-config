@@ -57,6 +57,7 @@ local plugins = {
   'hrsh7th/cmp-path',
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-cmdline',
 
   -- auto format
   'jose-elias-alvarez/null-ls.nvim',
@@ -69,16 +70,6 @@ local plugins = {
 
   -- for embedded code recognition
   'jmbuhr/otter.nvim',
-
-  -- for nicer UI pop-ups
-  {
-    'folke/noice.nvim',
-    event="VeryLazy",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    }
-  },
 
   -- for the TODO higlights
   {

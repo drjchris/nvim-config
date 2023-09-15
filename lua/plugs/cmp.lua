@@ -7,7 +7,7 @@ cmp.setup({
     end,
   },
   window = {
-    completion = cmp.config.window.bordered(),
+    -- completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({
@@ -17,6 +17,20 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   }),
+
+
+  -- dissable completion for comments
+      enabled = {function()
+      -- disable completion in comments
+      local context = require 'cmp.config.context'
+      -- keep command mode completion enabled when cursor is in a comment
+      if vim.api.nvim_get_mode().mode == 'c' then
+        return true
+      else
+        return not context.in_treesitter_capture("comment")
+          and not context.in_syntax_group("Comment")
+      end
+    end},
 
   sources = cmp.config.sources({
     -- { name = 'luasnip' }, -- For luasnip users.
@@ -131,9 +145,9 @@ cmp.setup.cmdline({ '/', '?' }, {
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources({
+    { name = 'cmdline' },
     { name = 'path' }
   }, {
-    { name = 'cmdline' }
   })
 })
 
