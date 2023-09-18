@@ -36,6 +36,7 @@ local settings = {
         content = {
             { "󰷈 Vim Wiki", "VimwikiIndex", "<leader>vww" },
             { "󰢧 Vim Diary", "VimwikiDiaryIndex", "<leader>vww" },
+            { "󰉌 Personal", "edit ~/vimwiki/personal/index.wiki", "<leader>vwp" },
             { " Find File", "Telescope find_files", "<leader>ff" },
             { " Find Word", "Telescope live_grep", "<leader>fg" },
             { " Recent Files", "Telescope oldfiles", "<leader>of" },

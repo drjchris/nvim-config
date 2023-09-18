@@ -14,7 +14,7 @@ vim.o.smartindent = true
 
 -- number column on left
 vim.o.nu = true
-vim.o.relativenumber = true
+-- vim.o.relativenumber = true
 
 -- sort out the tab
 vim.o.tabstop = 4
