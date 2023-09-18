@@ -28,6 +28,9 @@ vim.o.signcolumn = "yes"
 -- highlight cursor line
 vim.o.cursorline = true
 
+vim.o.clipboard = "unnamed"
+
+
 -- highlight search off and incremental search
 vim.o.hlsearch = false
 vim.o.incsearch = true
