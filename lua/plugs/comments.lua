@@ -1,15 +1,15 @@
 require('Comment').setup({
     toggler = {
         ---Line-comment toggle keymap
-        line = 'cl',
+        line = '/cl',
         ---Block-comment toggle keymap
-        block = 'ccm',
+        block = '/cm',
     },
     ---LHS of operator-pending mappings in NORMAL and VISUAL mode
     opleader = {
         ---Line-comment keymap
-        line = 'ccl',
+        line = 'cl',
         ---Block-comment keymap
-        block = 'cm',
+        block = 'gb',
     },
 })
