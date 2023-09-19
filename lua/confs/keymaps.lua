@@ -21,6 +21,12 @@ vim.keymap.set({'n', 't'}, '<C-p>', '<CMD>NavigatorPrevious<CR>')
 vim.keymap.set('n', '<leader>c', '<CMD><CR>', {desc="Code"})
 vim.keymap.set('n', '<leader>ct', '<CMD>TodoLocList<CR>', {desc="Todo List"})
 
+-- comments
+-- comments are actually handled in plugs/comments.lua
+-- this is just for the menu
+vim.keymap.set({"n", "v"}, '<leader>/', "<CMD><CR>", {desc="Comment"})
+
+
 -- ALL THE BUFFER STUFF
 vim.keymap.set('n', '<leader>b', '<CMD><CR>', {desc="Buffer"})
 vim.keymap.set('n', '<leader>bp', '<CMD>b#<CR>', {desc="Previous"})
@@ -33,19 +39,6 @@ vim.keymap.set('n', '<leader>bn', '<CMD><CR>', {desc="New"})
 vim.keymap.set('n', '<leader>bnr', '<CMD>vsp<CR>', {desc="Right"})
 vim.keymap.set('n', '<leader>bnb', '<CMD>sp<CR>', {desc="Bottom"})
 
--- open a new terminal
-
-
-vim.keymap.set('n', '<leader>Tf', '<CMD>ToggleTerm direction=float<CR>', {desc="Term Float"})
-
---[[
-vim.keymap.set('n', '<leader>bt', '<CMD><CR>', {desc="Terminal"})
-vim.keymap.set('n', '<leader>btn', '<CMD>set nu!<bar>set rnu!<bar>term<CR>', {desc="Open here"})
-vim.keymap.set('n', '<leader>btr', '<CMD>vsplit<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Right"})
-vim.keymap.set('n', '<leader>btb', '<CMD>split<bar>set nu!<bar>set rnu!<bar>term<CR>', {desc="Bottom"})
-
---]]
-
 -- VIMWIKI
 vim.keymap.set('n', '<leader>vw', '<CMD><CR>', {desc="vimWiki"})
 vim.keymap.set('n', '<leader>vww', '<CMD>VimwikiIndex<CR>', {desc="Index"})
@@ -54,5 +47,5 @@ vim.keymap.set('n', '<leader>vwn', '<CMD>VimwikiMakeDiaryNote<CR>', {desc="Diary
 vim.keymap.set('n', '<leader>vwt', '<CMD>VimwikiMakeTomorrowDiaryNote<CR>', {desc="Tomorrow Note"})
 vim.keymap.set('n', '<leader>vwC', '<CMD>w<bar>! wikitodoc %<CR>', {desc="Compile"})
 
-
+-- Startup
 vim.keymap.set({'n'}, '<leader>§', '<CMD>Startup display<CR>', {desc="Go to Start page"})

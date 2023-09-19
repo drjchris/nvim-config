@@ -29,3 +29,4 @@ mv $HOME/.config/nvim $HOME/.config/nvim.backup
 mv $HOME/.local/share/nvim $HOME/.local/share/nvim.backup
 mv $HOME/.local/state/nvim $HOME/.local/state/nvim.backup
 ```
+
