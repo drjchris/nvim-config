@@ -110,9 +110,6 @@ local plugins = {
   -- nvim wiki
   {'vimwiki/vimwiki',lazy=false},
 
-  -- better terminal
-  {'akinsho/toggleterm.nvim', version = "*", config = true},
-
   -- startup page
   {
     "startup-nvim/startup.nvim",
