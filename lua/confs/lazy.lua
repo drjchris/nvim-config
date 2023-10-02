@@ -95,7 +95,7 @@ local plugins = {
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
-      vim.o.timeoutlen = 30
+      vim.o.timeoutlen = 500
     end,
     opts = {
       -- your configuration comes here

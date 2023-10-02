@@ -15,7 +15,9 @@ vim.o.textwidth = 77
 vim.keymap.set("n", "<leader>t", "<CMD><CR>", {desc="text"})
 vim.keymap.set("n", "<leader>tp", "<CMD><CR>", {desc="paragraph"})
 vim.keymap.set("n", "<leader>tpw", "<CMD>norm gqap<CR>", {desc="wrap"})
+vim.keymap.set("n", "<leader>tdw", "<CMD>% norm gqap<CR>", {desc="wrap document"})
 vim.keymap.set("n", "<leader>tpu", "<CMD>norm vipJ<CR>", {desc="unwrap"})
+vim.keymap.set("n", "<leader>tdu", "<CMD>% norm vipJ<CR>", {desc="unwrap"})
 vim.keymap.set("n", "<leader>tps", "<CMD>s/\\. /\\.\\r\\t/g<CR>", {desc="split"})
 
 vim.cmd [[ let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_toc':1 }] ]]
