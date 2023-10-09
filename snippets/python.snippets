@@ -48,6 +48,11 @@ snippet writeJSON
 snippet mongoinit
   from pymongo import MongoClient
 
+  # connect to db
+  db = MongoClient()["$1"]
+
+  # connect to collection
+  x_col = db["x"]
 
 snippet flaskinit
   #!/usr/bin/env python
