@@ -116,6 +116,14 @@ local plugins = {
     dependencies = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
   },
 
+  -- for marking indent lines
+  { 
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {}
+  },
+
+
 }
 
 require("lazy").setup(plugins, opts)
