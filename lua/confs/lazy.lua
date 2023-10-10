@@ -117,12 +117,7 @@ local plugins = {
   },
 
   -- for marking indent lines
-  { 
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    opts = {}
-  },
-
+  { 'echasnovski/mini.indentscope', version = '*' },
 
 }
 
