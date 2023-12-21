@@ -30,7 +30,12 @@ local plugins = {
   'numToStr/Comment.nvim',
 
   -- Color theme
-  "rebelot/kanagawa.nvim",
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 
   -- better folds
   'anuvyklack/pretty-fold.nvim',

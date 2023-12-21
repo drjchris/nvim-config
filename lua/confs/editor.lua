@@ -16,6 +16,8 @@ vim.o.smartindent = true
 vim.o.nu = true
 -- vim.o.relativenumber = true
 
+vim.o.foldmethod = "marker"
+
 -- sort out the tab
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4

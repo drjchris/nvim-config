@@ -3,9 +3,6 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "pylsp",
         "lua_ls",
-        "clangd",
-        "tsserver",
-        "html"
     }
 })
 
@@ -38,9 +35,4 @@ require("lspconfig")["lua_ls"].setup {
     },
   },
 }
-
-require("lspconfig")["clangd"].setup {on_attach = on_attach, capabilities = capabilities}
-
-require("lspconfig")["tsserver"].setup {on_attach = on_attach, capabilities = capabilities}
-
 
