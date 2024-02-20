@@ -1,0 +1,37 @@
+snippet init_pdf
+	---
+	format:
+	  pdf:
+      mainfont: "PT Sans"
+      papersize: "a4"
+      link-citations: true
+	---
+
+snippet pagebreak
+	{{< pagebreak >}}
+
+snippet foldlines
+	<!-- {{{$1 -->
+	<!-- }}} -->
+
+snippet rightjust
+	::::{.flushright data-latex=""}
+	$1
+	::::
+
+snippet centerjust
+	::::{.center data-latex=""}
+	$1
+	::::
+
+snippet comment
+	<!-- $1 -->
+
+snippet note
+	<!-- NOTE: $1 -->
+	
+
+snippet todo
+	<!-- TODO: $1 -->
+
+
